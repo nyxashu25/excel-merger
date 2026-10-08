@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "excel-merger"
+dynamic = ["version"]
+description = "Merge many Excel and CSV files into one, aligning columns by header name."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["openpyxl>=3.1"]
+authors = [{ name = "Ashutosh Singh" }]
+keywords = ["excel", "xlsx", "csv", "merge", "spreadsheet", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Topic :: Office/Business :: Financial :: Spreadsheet",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/nyxashu25/excel-merger"
+Issues = "https://github.com/nyxashu25/excel-merger/issues"
+
+[project.scripts]
+excel-merger = "excel_merger.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "excel_merger.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
