@@ -7,6 +7,7 @@
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=0d1117)
 ![Version](https://img.shields.io/badge/version-1.0.0-22d3ee?style=flat-square&labelColor=0d1117)
 ![Dependency](https://img.shields.io/badge/depends%20on-openpyxl-8b949e?style=flat-square&labelColor=0d1117)
+![License](https://img.shields.io/badge/license-MIT-3fb950?style=flat-square&labelColor=0d1117)
 
 </div>
 
@@ -152,3 +153,7 @@ src/excel_merger/
 └── __main__.py   # python -m excel_merger
 tests/
 ```
+
+## License
+
+Released under the [MIT License](LICENSE).
